@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <title>Document</title>
+</head>
+<body>
+<section class="section-forms">
+  <div class="container">
+    <div class="forms">
+      <div class="forms__header">
+        <img src="img/form/logo.svg" alt="logo">
+        <h2>Изменение пароля</h2>
+      </div>
+      <form id="form" class="forms__form">
+        <div class="forms__form-controls">
+          <div class="forms__form-control">
+            <input class="forms__form-input" type="text" minlength="4" maxlength="40" placeholder="Email / Логин" id="username" />
+            <span class="forms__form-bar"></span>
+            <small>Error message</small>
+          </div>
+          <div class="forms__form-control">
+            <input class="forms__form-input" type="text" minlength="12" maxlength="40" placeholder="Контрольная строка" id="control" />
+            <span class="forms__form-bar"></span>
+            <small>Error message</small>
+          </div>
+          <div class="forms__form-control">
+            <input class="forms__form-input" type="password" minlength="6" maxlength="40" placeholder="Новый пароль" id="password" />
+            <span class="forms__form-bar"></span>
+            <small>Error message</small>
+            <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+          </div>
+          <div class="forms__form-control">
+            <input class="forms__form-input" type="password" minlength="6" maxlength="40" placeholder="Подтверждение пароля" id="password2" />
+            <span class="forms__form-bar"></span>
+            <small>Error message</small>
+          </div>
+        </div>
+        <p>Обязательные поля</p>
+        <button>Изменить пароль</button>
+        <div class="forms__link">
+          <a href="#">Зарегистироваться</a>
+          <a href="#">Войти</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>
